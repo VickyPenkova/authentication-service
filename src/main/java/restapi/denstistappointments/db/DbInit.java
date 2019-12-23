@@ -27,8 +27,8 @@ public class DbInit implements CommandLineRunner {
 
         // Crete users
         User patient = new User("patient",passwordEncoder.encode("patient"),"PATIENT","");
-        Doctor doctor1 = new Doctor("155266","Ivan", passwordEncoder.encode("doctor"),"dentist", true, "DOCTOR", "ACCESS_TEST1, ACCESS_TEST2");
-        Doctor doctor2 = new Doctor("1552523","Petkan", passwordEncoder.encode("doctor"),"dentist", true, "DOCTOR", "ACCESS_TEST1");
+//        Doctor doctor1 = new Doctor("155266","Ivan", passwordEncoder.encode("doctor"),"dentist", true, "DOCTOR", "ACCESS_TEST1, ACCESS_TEST2");
+//        Doctor doctor2 = new Doctor("1552523","Petkan", passwordEncoder.encode("doctor"),"dentist", true, "DOCTOR", "ACCESS_TEST1");
 
         List<User> users = Arrays.asList(patient);
 

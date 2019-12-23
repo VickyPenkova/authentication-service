@@ -8,7 +8,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import restapi.denstistappointments.db.UserRepository;
 import restapi.denstistappointments.model.User;
-import restapi.denstistappointments.repository.DoctorRepository;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

@@ -5,24 +5,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@Entity
 public class User {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
-    @Column(nullable = false)
     private String username;
-
-    @Column(nullable = false)
     private String password;
 
     private int active;
 
-    private String roles = "";
+    private String roles;
 
-    private String permissions = "";
+    private String permissions;
 
     public User(String username, String password, String roles, String permissions){
         this.username = username;

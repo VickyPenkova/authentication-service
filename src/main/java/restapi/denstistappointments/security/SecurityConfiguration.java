@@ -45,7 +45,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .antMatchers(HttpMethod.GET, "/api/public/doctors").anonymous()
             .antMatchers(HttpMethod.POST, "/api/public/doctor/register").anonymous()
             .antMatchers(HttpMethod.POST, "/login").permitAll()
-            .antMatchers("/api/doctor/*").hasRole("DOCTOR").antMatchers("/api/public/patient/*")
+            .antMatchers("/api/doctor/*").hasRole("DOCTOR")
+            .antMatchers("/api/public/patient/*")
             .hasRole("PATIENT").anyRequest().authenticated();
    }
 

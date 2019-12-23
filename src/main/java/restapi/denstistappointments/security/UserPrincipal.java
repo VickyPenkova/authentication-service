@@ -3,13 +3,13 @@ package restapi.denstistappointments.security;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import restapi.denstistappointments.jpa.Doctor;
 import restapi.denstistappointments.model.User;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+// Setting user roles
 public class UserPrincipal implements UserDetails {
    private User user;
 
@@ -41,6 +41,7 @@ public class UserPrincipal implements UserDetails {
       return this.user.getPassword();
    }
 
+   // Username will be EGGN
    @Override
    public String getUsername() {
       return this.user.getUsername();
