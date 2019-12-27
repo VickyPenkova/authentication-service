@@ -1,4 +1,4 @@
-package restapi.denstistappointments;
+package restapi.security;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

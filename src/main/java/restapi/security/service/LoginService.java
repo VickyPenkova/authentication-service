@@ -1,4 +1,4 @@
-package restapi.denstistappointments.service;
+package restapi.security.service;
 
 import org.springframework.stereotype.Service;
 

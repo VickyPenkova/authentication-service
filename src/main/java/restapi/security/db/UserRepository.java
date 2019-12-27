@@ -1,8 +1,8 @@
-package restapi.denstistappointments.db;
+package restapi.security.db;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import restapi.denstistappointments.model.User;
+import restapi.security.request.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
