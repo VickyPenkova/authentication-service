@@ -22,7 +22,6 @@ public class AuthenticationController {
       this.authenticationService = authenticationService;
    }
 
-   //TODO: When the user registers (Doctor or patient) -> encode its password and add login in here!
    @PostMapping("/login")
    public ResponseEntity<JWTTokenResponse> createCustomer(@RequestBody AuthenticationRequest request) throws Exception {
       return new ResponseEntity<>(
