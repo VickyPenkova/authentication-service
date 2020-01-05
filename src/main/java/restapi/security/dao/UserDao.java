@@ -8,10 +8,20 @@ public class UserDao {
    private String username;
    private String name;
    private String password;
-   private String meedicalSpeciality;
+   private String medicalSpeciality;
    private String roles;
    private int active;
    private int isGp;
+
+   public String getPermissions() {
+      return permissions;
+   }
+
+   public void setPermissions(String permissions) {
+      this.permissions = permissions;
+   }
+
+   private String permissions;
 
    public Date getCreatedAt() {
       return createdAt;
@@ -53,12 +63,12 @@ public class UserDao {
       this.password = password;
    }
 
-   public String getMeedicalSpeciality() {
-      return meedicalSpeciality;
+   public String getMedicalSpeciality() {
+      return medicalSpeciality;
    }
 
-   public void setMeedicalSpeciality(String meedicalSpeciality) {
-      this.meedicalSpeciality = meedicalSpeciality;
+   public void setMedicalSpeciality(String medicalSpeciality) {
+      this.medicalSpeciality = medicalSpeciality;
    }
 
    public String getRoles() {
